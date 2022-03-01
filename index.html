@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_3a301f3011c04b07bf0a8236ed31c4d1 {
+                #map_20cb483a8ffb4548ba9c256d7f1bebd8 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,13 +35,13 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_3a301f3011c04b07bf0a8236ed31c4d1" ></div>
+            <div class="folium-map" id="map_20cb483a8ffb4548ba9c256d7f1bebd8" ></div>
         
 </body>
 <script>    
     
-            var map_3a301f3011c04b07bf0a8236ed31c4d1 = L.map(
-                "map_3a301f3011c04b07bf0a8236ed31c4d1",
+            var map_20cb483a8ffb4548ba9c256d7f1bebd8 = L.map(
+                "map_20cb483a8ffb4548ba9c256d7f1bebd8",
                 {
                     center: [31.79816561371149, 34.63245546537737],
                     crs: L.CRS.EPSG3857,
@@ -55,9 +55,34 @@
 
         
     
-            var tile_layer_495cb2ee864b46d6899a471163015d7e = L.tileLayer(
+            var tile_layer_7c35f156bc6d438aba039f0cb91f8ae5 = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_3a301f3011c04b07bf0a8236ed31c4d1);
+            ).addTo(map_20cb483a8ffb4548ba9c256d7f1bebd8);
         
+    
+            var marker_db8c26e2091c4b56979d76264e3315ba = L.marker(
+                [31.797747, 34.6325474],
+                {}
+            ).addTo(map_20cb483a8ffb4548ba9c256d7f1bebd8);
+        
+    
+            var icon_65ae62444705424981b8785bb56f03fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_db8c26e2091c4b56979d76264e3315ba.setIcon(icon_65ae62444705424981b8785bb56f03fa);
+        
+    
+        var popup_76b0a662bf504d75be159d4f95c230b5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c440323866d4a4db31269f810056433 = $(`<div id="html_3c440323866d4a4db31269f810056433" style="width: 100.0%; height: 100.0%;">Double parks in: H40 H41</div>`)[0];
+            popup_76b0a662bf504d75be159d4f95c230b5.setContent(html_3c440323866d4a4db31269f810056433);
+        
+
+        marker_db8c26e2091c4b56979d76264e3315ba.bindPopup(popup_76b0a662bf504d75be159d4f95c230b5)
+        ;
+
+        
+    
 </script>
